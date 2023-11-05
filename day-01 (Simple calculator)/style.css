@@ -51,3 +51,43 @@ form input.equal{
 form input.operator{
     color: #000000;
 }
+.Copyright{
+    text-align: center;
+
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: #495057;
+    padding:20px 20%;
+    justify-content:center;
+    align-items:center;
+    
+        
+}
+
+footer a{
+    display:inline-flex;
+    margin-left: 12px;
+    border:2px solid #5B7553;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    border-style:solid;
+    padding:5px ;
+    transition:0.5s;  
+    color: white;
+}
+
+footer a:hover{
+    background-color:#5B7553;
+    border-color: #5B7553;
+    box-shadow: 0 0 10px #5B7553;
+}
+
+footer p{
+    margin-top: 20px;
+    text-align:left;
+    color: white;
+    
+}
