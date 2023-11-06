@@ -1,0 +1,95 @@
+body{
+margin: 0;
+height: 100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+background: #ffba08;
+}
+
+ul{
+    padding:0;
+    list-style-type: none;
+}
+ul li{
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em rgb(0, 0, 0,0.2);
+    color: rgb(241, 233, 233);
+    font-family:poppins;
+    /* capitalize the first character of each word while making all other characters lowercase. */
+    text-transform: capitalize;
+    /* is used to set the spacing between lines of text within an element. */
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*  This part of the code selects odd-numbered list items (li) within an unordered list (ul). The :nth-child(odd) pseudo-class selects elements based on their position within their parent. In this case, it selects the odd-numbered list items */
+ul li:nth-child(odd){
+    /* the color #0096c7 on the left to #48cae4 on the right. This creates a horizontal gradient background for the odd list items. */
+    background: linear-gradient(to right,#0096c7,#48cae4);
+    text-align: left;
+    padding-left: 10%;
+    /* This property applies a 3D transformation to the odd list items. It gives them a perspective view by applying perspective(500px) and then rotates them around the Y-axis by 45 degrees. This will create a 3D transformation effect on the odd list items, making them appear rotated and with perspective. */
+    transform: perspective(500px) rotateY(45deg);
+}
+ul li:nth-child(even){
+    background: linear-gradient(to left,#e85d04,#d00000);
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px) rotateY(-45deg);
+}
+ul li:nth-child(odd):hover{
+    transform: perspective(200px) rotateY(45deg);
+    padding-left: 5%;
+}
+ul li:nth-child(even):hover{
+    transform: perspective(200px) rotateY(-45deg);
+    padding-left: 5%;
+}
+
+/* footer */
+.Copyright{
+    text-align: center;
+
+}
+footer{
+    width: 60%;
+    bottom: 0;
+   
+    background-color: #495057;
+    padding:20px 20%;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+}
+
+footer a{
+    display:inline-flex;
+    margin-left: 12px;
+    border:2px solid #ffba08;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    border-style:solid;
+    padding:5px ;
+    transition:0.5s;  
+    color: white;
+}
+
+footer a:hover{
+    background-color:#ffba08;
+    border-color: #ffba08;
+    box-shadow: 0 0 10px #ffba08;
+}
+
+footer p{
+    margin-top: 20px;
+    text-align:left;
+    color: white;
+    
+}
