@@ -44,3 +44,45 @@ body{
     top: 5px;
     left: 15px;
 }
+
+/* footer */
+.Copyright{
+    text-align: center;
+
+}
+footer{
+    width: 100%;
+    bottom: 0;
+   
+    background-color: #495057;
+    padding:20px 20%;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+}
+
+footer a{
+    display:inline-flex;
+    margin-left: 12px;
+    border:2px solid #f4005c;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    border-style:solid;
+    padding:5px ;
+    transition:0.5s;  
+    color: white;
+}
+
+footer a:hover{
+    background-color:#f4005c;
+    border-color: #f4005c;
+    box-shadow: 0 0 10px #f4005c;
+}
+
+footer p{
+    margin-top: 20px;
+    text-align:left;
+    color: white;
+    
+}
